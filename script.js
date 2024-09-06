@@ -35,10 +35,11 @@ less.addEventListener('click', () => {
 
 function updateMainPhoto(e) {
 	const href = this.href
+
 	console.log(href)
-	const photoTag = this.href.slice(22)
-	let imageIndex = href.charAt(43)
-	const photoUrl = `${photoTag.slice(0, 21)}${imageIndex}${photoTag.slice(22)}`
+	const photoTag = this.href.slice(74)
+	let imageIndex = href.charAt(83)
+	const photoUrl = `${href.slice(0, 83)}${imageIndex}${href.slice(84)}`
 
 	console.log({ imageIndex })
 	console.log({ photoTag })
