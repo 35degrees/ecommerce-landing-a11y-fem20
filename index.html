@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | E-commerce product page</title>
+
+<body>
+  <div class="page-container">
+		<main id="content-container">
+			<nav class="navbar">
+				<div class="hamburger-menu">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="logo-container">
+					<div class="logo"></div>
+				</div>	
+				<div class="nav-links">
+					<ul class="nav-items">
+						<li class="nav-item nav-item-1">
+							<a href="/">Collections</a>
+						</li>
+						<li class="nav-item nav-item-2">
+							<a href="/">Men</a>
+						</li>
+						<li class="nav-item nav-item-3">
+							<a href="/">Women</a>
+						</li>
+						<li class="nav-item nav-item-4">
+							<a href="/">About</a>
+						</li>
+						<li class="nav-item nav-item-5">
+							<a href="/">Contact</a>
+						</li>
+					</ul>
+					<div class="nav-icons">
+						<div class="cart" role='button' aria-label="cart">
+
+						</div>
+						<div class="avatar" role='button' aria-label="profile">
+	
+						</div>
+					</div>
+				</div>
+
+			</nav>
+			<div class="line-break"></div>
+			<section id="main-content">
+				<section id="product-imagery">
+					<div class="main-photo-container">
+							<div class="arrow-left"></div>
+							<div class="arrow-right"></div>
+						<div class="main-photo"></div>
+					</div>
+					<div class="sub-photo-container">
+							<a class="photo photo-1" href="images/image-product-1.jpg" data-lightbox="product" aria-label="image of product 1"></a>
+							<a class="photo photo-2" href="images/image-product-2.jpg" data-lightbox="product" aria-label="image of product 2"></a>
+							<a class="photo photo-3" href="images/image-product-3.jpg" data-lightbox="product" aria-label="image of product 3"></a>
+							<a class="photo photo-4" href="images/image-product-4.jpg" data-lightbox="product" aria-label="image of product 4"></a>
+					</div>
+				</section>
+				<section id="product-description">
+					<h3 class="product-category">Sneaker Company</h3>
+					<h1 class="product-header">Fall Limited Edition Sneakers</h1>
+					<p class="product-description">
+						These low-profile sneakers are your perfect casual wear companion. Featuring a 
+						durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+						<div class="product-pricing">
+							<div class="new-pricing">
+								<p class="product-price">$125.00</p>
+								<p class="product-discount">50%</p>
+							</div>
+							<div class="old-pricing">
+								<p class="old-price">$250.00</p>
+							</div>
+						</div>
+						<section id="checkout">
+							<div class="quantity">
+								<div class="less-container">
+
+									<div class="less"></div>
+								</div>
+								<p class="amount"></p>
+								<div class="plus-container">
+
+									<div class="plus"></div>
+								</div>
+							</div>
+							<button class="add">
+								<div class="button-cart"></div>
+								<p class="button-text">Add to Cart</p>
+							</button>
+						</section>
+				</section>
+			</section>
+		</main>
+	</div>
+</body>
+<script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+</html>
