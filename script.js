@@ -39,7 +39,7 @@ function updateMainPhoto(e) {
 	console.log(href)
 	const photoTag = this.href.slice(74)
 	let imageIndex = href.charAt(83)
-	const photoUrl = `${href.slice(0, 83)}${imageIndex}${href.slice(84)}`
+	const photoUrl = `${href.slice(0, 83)}${imageIndex}${photoTag.slice(84)}`
 
 	console.log({ imageIndex })
 	console.log({ photoTag })
@@ -62,19 +62,11 @@ subPhotos.forEach((photo) => {
 })
 
 function incrementPhoto() {
-	if (imageIndex === 4) {
-		imageIndex = 1
-	} else {
-		imageIndex++
-	}
+	imageIndex === 4 ? (imageIndex = 1) : imageIndex++
 	mainPhoto.style.backgroundImage = `url(images/image-product-${imageIndex}.jpg)`
 }
 function decrementPhoto() {
-	if (imageIndex === 1) {
-		imageIndex = 4
-	} else {
-		imageIndex--
-	}
+	imageIndex === 1 ? (imageIndex = 4) : imageIndex--
 	mainPhoto.style.backgroundImage = `url(images/image-product-${imageIndex}.jpg)`
 }
 
